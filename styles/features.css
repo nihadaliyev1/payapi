@@ -1,0 +1,118 @@
+@layer features {
+  .features {
+    margin-bottom: 10rem;
+
+    @media only screen and (max-width: 41em) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  .features__heading {
+    margin-bottom: 2.4rem;
+  }
+
+  .features__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+    gap: 15rem;
+
+    @media only screen and (max-width: 60em) {
+      gap: 10rem;
+      margin-bottom: 10rem;
+    }
+
+    @media only screen and (max-width: 28em) {
+      gap: 8rem;
+      margin-bottom: 8rem;
+    }
+  }
+
+  .features__wrapper {
+    display: flex;
+    gap: 12.5rem;
+    align-items: center;
+
+    @media only screen and (max-width: 60em) {
+      flex-direction: column;
+      gap: 5rem;
+      &:nth-of-type(even) .features__img-content {
+        order: -1;
+      }
+    }
+  }
+
+  .features__img-content--2 {
+    display: grid;
+    gap: 4rem;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: 60em) {
+      grid-row: 3;
+    }
+  }
+
+  .features__img-content {
+    flex: 1;
+    @media only screen and (max-width: 60em) {
+      max-width: 45rem;
+    }
+  }
+
+  .features__text-content {
+    flex: 1;
+    @media only screen and (max-width: 60em) {
+      max-width: 57.3rem;
+      text-align: center;
+    }
+  }
+
+  .features__feature-img {
+    width: 10.5rem;
+
+    @media only screen and (max-width: 60em) {
+      width: 7.5rem;
+    }
+
+    @media only screen and (max-width: 41em) {
+      width: 10.5rem;
+    }
+  }
+
+  /* Feature list */
+
+  .features__list {
+    gap: 3rem;
+
+    @media only screen and (max-width: 60em) {
+      gap: 1rem;
+    }
+    @media only screen and (max-width: 41em) {
+      gap: 4.8rem;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  .features__feature-header {
+    gap: 3.2rem;
+  }
+
+  .features__feature {
+    gap: 1.5rem;
+    text-align: center;
+
+    @media only screen and (max-width: 41em) {
+      max-width: 35rem;
+    }
+  }
+
+  .features__shape {
+    top: -25rem;
+    right: -75rem;
+
+    @media only screen and (max-width: 60em) {
+      display: none;
+    }
+  }
+}

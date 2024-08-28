@@ -1,0 +1,103 @@
+@layer header {
+  .header-container {
+    display: flex;
+    gap: 6.5rem;
+    padding-top: 4.5rem;
+    align-items: center;
+
+    @media only screen and (max-width: 41em) {
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+
+  .navigation--header {
+    @media only screen and (max-width: 41em) {
+      display: none;
+      transition: 0.3s transform;
+      @starting-style {
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  .nav--active .navigation--header {
+    display: block;
+  }
+
+  .nav__icon--close {
+    transform: translateX(100%);
+    display: none;
+  }
+
+  .nav--active .nav__icon--close {
+    display: block;
+  }
+
+  .nav--active .nav__icon--open {
+    display: none;
+  }
+
+  .nav--active .navigation--header {
+    @media only screen and (max-width: 41em) {
+      width: 80%;
+      position: absolute;
+      height: 100vh;
+      right: 0;
+      top: 0;
+      background-color: var(--clr-secondary-dkr);
+      z-index: 1000;
+      padding-top: 10rem;
+    }
+  }
+
+  .nav--active .navigation__item:has(.btn) {
+    width: 90%;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .navigation__button {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+
+    @media only screen and (max-width: 41em) {
+      display: block;
+    }
+  }
+
+  .navigation__list--header {
+    @media only screen and (max-width: 41em) {
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2.4rem;
+      position: relative;
+      .navigation__item {
+        font-size: var(--fs-body-lrg);
+        font-weight: 700;
+        color: var(--clr-primary-lt);
+        &:has(.btn) {
+          margin-left: 0;
+        }
+      }
+
+      &::before {
+        content: "";
+        height: 1px;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: var(--clr-primary-lt);
+        opacity: 0.15;
+      }
+    }
+  }
+}

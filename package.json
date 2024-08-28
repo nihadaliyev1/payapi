@@ -1,0 +1,18 @@
+{
+  "name": "payapi",
+  "version": "1.0.0",
+  "source": "pages/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "description": "PayAPI website",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Nihad Aliyev",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}

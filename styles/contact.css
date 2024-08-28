@@ -1,0 +1,136 @@
+@layer contact {
+  .contactus {
+    margin-block: 8rem 10rem;
+    position: relative;
+    @media only screen and (max-width: 28em) {
+      margin-block: 4.8rem 8rem;
+    }
+  }
+
+  .contactus__heading {
+    grid-column: 1 / -1;
+    max-width: 73rem;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: 60em) {
+      text-align: center;
+      max-width: 54rem;
+      margin-bottom: 5.5rem;
+    }
+  }
+
+  .contact__shape {
+    right: -10rem;
+    top: -80rem;
+
+    @media only screen and (max-width: 90em) {
+      right: -20rem;
+      top: -90rem;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      right: -60rem;
+      top: -70rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      right: -63rem;
+      top: -75rem;
+    }
+
+    @media only screen and (max-width: 41.25em) {
+      right: -70rem;
+      top: -80rem;
+    }
+  }
+
+  .contactus__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    @media only screen and (max-width: 60em) {
+      max-width: 44.5rem;
+      margin-bottom: 6.5rem;
+    }
+
+    @media only screen and (max-width: 28em) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  .contactus__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .contactus__btn {
+    max-width: 15.2rem;
+  }
+
+  .contactus__checkbox {
+    appearance: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: var(--clr-border-ltr);
+    display: grid;
+    place-content: center;
+
+    &::before {
+      content: "";
+      width: 2.4rem;
+      height: 2.4rem;
+      background-color: var(--clr-primary-dk);
+      transform: scale(0);
+      background: no-repeat center/65%
+        url(../assets/shared/desktop/icon-check-w.svg) var(--clr-primary-dk);
+      transition: 0.2s all;
+    }
+
+    &:checked::before {
+      transform: scale(1);
+    }
+  }
+
+  .contactus-preference {
+    display: flex;
+    gap: 2.5rem;
+    place-items: center;
+    color: var(--clr-secondary-dk);
+  }
+
+  .contactus__input {
+    width: 100%;
+  }
+
+  .contactus-container {
+    display: grid;
+    grid-template-columns: minmax(auto, 44.5rem) 1fr;
+    column-gap: 12.5rem;
+    align-items: center;
+
+    @media only screen and (max-width: 68.75em) {
+      column-gap: 4rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  .contactus__partners-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .contactus__partners-heading {
+    @media only screen and (max-width: 60em) {
+      text-align: center;
+      max-width: 44.5rem;
+      margin: 0 auto;
+    }
+  }
+}

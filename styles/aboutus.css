@@ -1,0 +1,143 @@
+@layer aboutus {
+  .aboutus {
+    margin-block: 8rem 10rem;
+    position: relative;
+    @media only screen and (max-width: 60em) {
+      margin-bottom: 7rem;
+    }
+
+    @media only screen and (max-width: 41em) {
+      margin-block: 4.8rem;
+    }
+  }
+
+  .aboutus__textcontent-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+    margin-bottom: 10rem;
+
+    @media only screen and (max-width: 41em) {
+      gap: 4.5rem;
+    }
+  }
+
+  .about__shape {
+    right: -10rem;
+    top: -80rem;
+
+    @media only screen and (max-width: 90em) {
+      right: -20rem;
+      top: -90rem;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      right: -60rem;
+      top: -70rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      right: -63rem;
+      top: -75rem;
+    }
+
+    @media only screen and (max-width: 41.25em) {
+      right: -70rem;
+      top: -80rem;
+    }
+  }
+
+  .about__shape--2 {
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: 90em) {
+      left: -20%;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      left: -30%;
+    }
+
+    @media only screen and (max-width: 60em) {
+      display: none;
+    }
+  }
+
+  .aboutus__heading {
+    max-width: 72rem;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: 60em) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .aboutus__textcontent {
+    display: flex;
+    gap: 3rem;
+
+    @media only screen and (max-width: 41em) {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+      max-width: 33rem;
+      margin: 0 auto;
+    }
+  }
+
+  .aboutus__textcontent-heading {
+    flex: 1;
+  }
+
+  .aboutus__textcontent-description {
+    flex: 3;
+  }
+
+  .aboutus__img-container {
+    width: 100vw;
+    margin-bottom: 7rem;
+    position: relative;
+  }
+
+  .aboutus__facts-container {
+    margin-bottom: 7rem;
+  }
+
+  .aboutus__facts-list {
+    display: flex;
+    gap: 3rem;
+
+    @media only screen and (max-width: 41em) {
+      flex-direction: column;
+      text-align: center;
+      border-block: 1px solid var(--clr-border-ltr);
+    }
+  }
+
+  .aboutus__facts-wrapper {
+    flex: 1;
+    padding: 1.6rem 0;
+    border-block: 1px solid var(--clr-border-ltr);
+
+    @media only screen and (max-width: 41em) {
+      border-block: none;
+    }
+  }
+
+  .aboutus__facts-fact {
+    font-size: 1.6rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+
+  .aboutus__facts-description {
+    color: var(--clr-primary-dk);
+    font-size: var(--fs-h1-sml);
+    line-height: var(--lh-h1-sml);
+    font-family: var(--ff-alt);
+    letter-spacing: var(--ls-h1-sml);
+  }
+}

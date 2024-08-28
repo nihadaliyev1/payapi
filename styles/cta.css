@@ -1,0 +1,17 @@
+@layer cta {
+  .cta {
+    margin-bottom: 10rem;
+  }
+
+  .cta__container {
+    justify-content: space-between;
+    @media only screen and (max-width: 60em) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    @media only screen and (max-width: 28em) {
+      gap: 3rem;
+    }
+  }
+}

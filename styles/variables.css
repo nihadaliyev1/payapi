@@ -1,0 +1,74 @@
+@layer variables {
+  :root {
+    /* Colors */
+
+    --clr-primary-dk: #ba4270;
+    --clr-primary-lt: #fbfcfe;
+    --clr-secondary-dk: #36536b;
+    --clr-secondary-dkr: #1b262f;
+    --clr-secondary-lt: #da6d97;
+    --clr-secondary-ntrl: #6c8294;
+    --clr-body--background: #edf3f8;
+    --clr-border-ltr: rgba(151, 151, 151, 0.25);
+    --clr-border-lt: rgba(151, 151, 151, 0.5);
+    --clr-error-lt: rgba(255, 0, 0, 0.5);
+    --clr-error: rgb(255, 0, 0);
+
+    /* Font Family */
+
+    --ff-base: "Public Sans", sans-serif;
+    --ff-alt: "DM Serif Display", serif;
+
+    /*  Font Sizes */
+
+    --fs-h1-lrg: 7.2rem;
+    --fs-h1-sml: 5.6rem;
+    --fs-h2: 4.8rem;
+    --fs-h3-lrg: 3.2rem;
+    --fs-h3-sml: 1.8rem;
+    --fs-h4: 2.4rem;
+    --fs-body: 1.5rem;
+    --fs-body-lrg: 2rem;
+
+    /* Line Heights */
+
+    --lh-h1-lrg: 7.2rem;
+    --lh-h1-sml: 5.6rem;
+    --lh-h2: 5.6rem;
+    --lh-h3-lrg: 4rem;
+    --lh-h3-sml: 2.5rem;
+    --lh-h4: 3.2rem;
+    --lh-body: 2.8rem;
+
+    /* Letter Spacing */
+
+    --ls-h1-lrg: -0.55px;
+    --ls-h1-sml: -0.43px;
+    --ls-h2: -0.37px;
+    --ls-h3-lrg: -0.25px;
+    --ls-h3-sml: -0.14px;
+    --ls-h4: -0.18px;
+    --ls-btn: -0.12px;
+
+    /* Border Radius */
+
+    --br-stnd: 2.4rem;
+
+    /* Animation Durations */
+
+    --ad-standard: 0.2s;
+
+    /* Paddings */
+
+    --pd-stnd: 1.5rem 2.5rem;
+
+    /* Layout */
+    --cntr-size: 110rem;
+    --cntr-pad: 3rem;
+    --cntr-pad--mob: 4rem;
+
+    /* Breakpoints */
+
+    --bp-desktop-lg: 90em;
+  }
+}

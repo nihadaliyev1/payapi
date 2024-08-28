@@ -1,0 +1,327 @@
+@layer components {
+  /* Headings */
+
+  /* -----h1----- */
+  .heading--primary--lrg {
+    font-size: var(--fs-h1-lrg);
+    line-height: var(--lh-h1-lrg);
+    font-family: var(--ff-alt);
+    letter-spacing: var(--ls-h1-lrg);
+    font-weight: 400;
+
+    @media only screen and (max-width: 68.75em) {
+      font-size: 6rem;
+    }
+    @media only screen and (max-width: 60em) {
+      font-size: var(--fs-h2);
+      line-height: var(--lh-h2);
+      letter-spacing: var(--ls-h2);
+    }
+
+    @media only screen and (max-width: 28em) {
+      font-size: var(--fs-h3-lrg);
+      line-height: var(--lh-h3-lrg);
+      letter-spacing: var(--ls-h3-lrg);
+    }
+  }
+
+  .heading--primary--sml {
+    font-size: var(--fs-h1-sml);
+    line-height: var(--lh-h1-sml);
+    font-family: var(--ff-alt);
+    letter-spacing: var(--ls-h1-sml);
+    font-weight: 400;
+
+    @media only screen and (max-width: 60em) {
+      font-size: var(--fs-h2);
+      line-height: var(--lh-h2);
+      letter-spacing: var(--ls-h2);
+    }
+
+    @media only screen and (max-width: 41em) {
+      font-size: var(--fs-h3-lrg);
+      line-height: var(--lh-h3-lrg);
+      letter-spacing: var(--ls-h3-lrg);
+    }
+  }
+
+  /* -----h2----- */
+  .heading--secondary {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    font-family: var(--ff-alt);
+    letter-spacing: var(--ls-h2);
+    font-weight: 400;
+
+    @media only screen and (max-width: 28em) {
+      font-size: var(--fs-h3-lrg);
+      line-height: var(--lh-h3-lrg);
+      letter-spacing: var(--ls-h3-lrg);
+    }
+  }
+
+  /* -----h3----- */
+
+  .heading--tertiary--lrg {
+    font-size: var(--fs-h3-lrg);
+    line-height: var(--lh-h3-lrg);
+    font-family: var(--ff-alt);
+    letter-spacing: var(--ls-h3-lrg);
+    font-weight: 400;
+
+    @media only screen and (max-width: 60em) {
+      font-size: var(--fs-h4);
+      line-height: var(--lh-h4);
+      letter-spacing: var(--ls-h4);
+    }
+  }
+
+  .heading--tertiary--sml {
+    font-size: var(--fs-h3-sml);
+    line-height: var(--lh-h3-sml);
+    font-family: var(--ff-base);
+    letter-spacing: var(--ls-h3-sml);
+    font-weight: 700;
+  }
+
+  /* -----h4----- */
+
+  .heading--quaternary {
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+    font-weight: 400;
+    font-family: var(--ff-alt);
+    letter-spacing: var(--ls-h4);
+  }
+
+  /* ---------------------------------------- */
+
+  /* Paragraph text */
+
+  .paragraph {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    font-family: var(--ff-base);
+    color: var(--clr-secondary-ntrl);
+  }
+
+  /* ---------------------------------------- */
+
+  /* Buttons */
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+
+    display: inline-block;
+    border-radius: var(--br-stnd);
+    transition: var(--ad-standard) all;
+    text-align: center;
+    padding: var(--pd-stnd);
+    font-size: var(--fs-body);
+    letter-spacing: var(--ls-btn);
+    font-weight: 700;
+  }
+
+  .btn--primary,
+  .btn--primary:link,
+  .btn--primary:active {
+    color: var(--clr-primary-lt);
+    background-color: var(--clr-primary-dk);
+    border: none;
+
+    &:hover {
+      background-color: var(--clr-secondary-lt);
+    }
+  }
+
+  .btn--secondary,
+  .btn--secondary:link,
+  .btn--secondary:visited {
+    color: var(--clr-primary-lt);
+    background-color: transparent;
+    border: 1px solid var(--clr-primary-lt);
+
+    &:hover {
+      background-color: #fff;
+      color: var(--clr-secondary-dkr);
+    }
+  }
+
+  .btn--form {
+    color: var(--clr-secondary-dk);
+    background-color: transparent;
+    border: 1px solid var(--clr-secondary-dk);
+
+    &:hover {
+      color: #fff;
+      background-color: var(--clr-secondary-dk);
+    }
+  }
+
+  /* ---------------------------------------- */
+
+  /* Form elements */
+
+  .input {
+    border: none;
+
+    font-family: inherit;
+    color: var(--clr-secondary-dk);
+    padding: var(--pd-stnd);
+    border-radius: var(--br-stnd);
+    font-weight: 700;
+    width: 100%;
+    max-width: 44.5rem;
+
+    &::placeholder {
+      opacity: 0.5;
+      font-size: var(--fs-body);
+    }
+  }
+
+  .input--form {
+    border: none;
+    padding: 2rem;
+    border-bottom: 1px solid var(--clr-border-lt);
+    background-color: transparent;
+    color: var(--clr-secondary-dk);
+    font-family: inherit;
+
+    &:is(textarea) {
+      resize: none;
+    }
+
+    &::placeholder {
+      opacity: 0.7;
+      font-size: var(--fs-body);
+    }
+  }
+
+  :is(.input-error, .input--email-error) {
+    position: relative;
+    :is(input, textarea) {
+      border-bottom: 1px solid var(--clr-error);
+      color: var(--clr-error-lt);
+      position: relative;
+
+      &::placeholder {
+        color: var(--clr-error);
+      }
+    }
+
+    &::after {
+      content: "This field can’t be empty";
+      color: var(--clr-error-lt);
+      position: absolute;
+      left: 2rem;
+      bottom: -2rem;
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    &:is(.input--email-error)::after {
+      content: "Specify a valid email";
+    }
+  }
+
+  /* Navigation */
+
+  .navigation {
+    display: flex;
+    flex: 1;
+  }
+
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex: 1;
+  }
+
+  .navigation__item--footer,
+  .navigation__item:not(:has(.btn)) {
+    font-size: var(--fs-body);
+    font-weight: 700;
+    opacity: 0.7;
+    transition: 0.2s all;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .navigation__item--footer {
+    color: var(--clr-primary-lt);
+  }
+
+  .navigation__logo {
+    width: 13.5rem;
+    height: 3.8rem;
+  }
+
+  .navigation__item:has(.btn) {
+    margin-left: auto;
+  }
+
+  .navigation__social-container {
+    gap: 2.5rem;
+  }
+
+  .navigation__social-link:hover path {
+    transition: 0.2s all;
+  }
+
+  .navigation__social-link:hover path {
+    fill: var(--clr-secondary-lt);
+  }
+
+  /* Helpers */
+
+  .v-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .text--white {
+    color: #fff;
+  }
+
+  .opacity-70 {
+    opacity: 0.7;
+  }
+
+  .img {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  /* Decoration */
+
+  .circle-shape {
+    background-color: #979797;
+    opacity: 0.3;
+    width: 90rem;
+    height: 90rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+}

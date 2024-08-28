@@ -1,0 +1,144 @@
+@layer pricing {
+  .pricing {
+    margin-block: 10rem 8rem;
+    position: relative;
+    @media only screen and (max-width: 41em) {
+      margin-block: 4.8rem 8rem;
+    }
+  }
+  .heading--pricing {
+    margin-bottom: 7rem;
+    @media only screen and (max-width: 60em) {
+      text-align: center;
+    }
+  }
+
+  .pricing__shape {
+    right: -10rem;
+    top: -80rem;
+
+    @media only screen and (max-width: 90em) {
+      right: -20rem;
+      top: -90rem;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      right: -60rem;
+      top: -70rem;
+    }
+
+    @media only screen and (max-width: 60em) {
+      right: -65rem;
+      top: -75rem;
+    }
+
+    @media only screen and (max-width: 28em) {
+      right: -70rem;
+      top: -80rem;
+    }
+  }
+
+  .pricing__list {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    @media only screen and (max-width: 41em) {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+  }
+
+  .pricing__header {
+    @media only screen and (max-width: 60em) {
+      text-align: center;
+    }
+  }
+
+  .pricing__plan-text {
+    color: var(--clr-primary-dk);
+    margin-bottom: 1.6rem;
+
+    @media only screen and (max-width: 60em) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .pricing__paragraph {
+    margin-bottom: 0.8rem;
+
+    @media only screen and (max-width: 60em) {
+      margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: 41em) {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .pricing__price-text strong {
+    font-weight: 400;
+
+    @media only screen and (max-width: 41em) {
+      font-size: var(--fs-h1-sml);
+      line-height: var(--lh-h1-sml);
+      letter-spacing: var(--ls-h1-sml);
+    }
+  }
+
+  .pricing__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    @media only screen and (max-width: 60em) {
+      max-width: 33rem;
+    }
+  }
+
+  .pricing__feature-text {
+    font-size: 1.6rem;
+  }
+
+  .pricing__feature--disabled {
+    opacity: 0.6;
+  }
+
+  .pricing__feature {
+    padding-left: 3.8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .pricing__feature-icon {
+    position: absolute;
+    left: 0;
+  }
+
+  .pricing__features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 2.4rem 0;
+
+    @media only screen and (max-width: 60em) {
+      margin: 0 auto;
+    }
+  }
+
+  .pricing__features-list-wrapper {
+    border-top: 1px solid var(--clr-border-ltr);
+    border-bottom: 1px solid var(--clr-border-ltr);
+    display: flex;
+  }
+
+  .btn--pricing {
+    max-width: 16.8rem;
+
+    @media only screen and (max-width: 60em) {
+      margin: 0 auto;
+    }
+  }
+}
