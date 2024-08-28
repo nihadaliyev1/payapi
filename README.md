@@ -3,16 +3,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Built with](#built-with)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -26,7 +17,7 @@ This is a website of PayAPI company, which provides easy solutions for secure pa
 
 ### Links
 
-URL: [Add live site URL here](https://your-live-site-url.com)
+URL: [PayAPI](https://payyapii.netlify.app/)
 
 ## My process
 
